@@ -9,7 +9,7 @@ services:
     volumes:
       - ./db/databases:/var/lib/mysql
     ports: 
-      - 3306:3306
+      - 5953:5953
   adminer:
     image: adminer
     restart: always
@@ -26,7 +26,7 @@ services:
     environment:
       TOKEN:  
       HOST: db
-      PORT: 3306
+      PORT: 5953
       USER: root
       PASSWORD: mysqlrootpassword
-      admin_id: 1339488902
+      admin_id: 1437775058
